@@ -2,6 +2,9 @@
 
 body {
   font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h2 {
@@ -56,6 +59,9 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -64,8 +70,12 @@ header {
   color: #fff;
 }
 
-header nav ul li {
+header nav ul  {
+  display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 header nav ul li a {
@@ -83,6 +93,9 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form label {
